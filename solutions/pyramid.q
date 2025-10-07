@@ -9,12 +9,11 @@ Pyr:{[P]
     first newrow
     }
 
-
 rowswitch:{[x;y]
     L::x;
     L1::y;
-    newrow:{[x1] L1[x1]+max(L[x1];L[x1+1])}each til count L1
+    newrow:{L1[x]+max(L[x];L[x+1])}each til count L1
     }
-Pyr2:{[P]   
+Pyr2:{[P]
     first (rowswitch/)reverse P
     }
