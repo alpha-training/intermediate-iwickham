@@ -1,3 +1,1 @@
-tradeFill:{[x;y]
-    deltas x&sums y
-    }
+tradeFill:{deltas x&sums y}
