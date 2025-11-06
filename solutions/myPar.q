@@ -1,1 +1,1 @@
-myQpar:{[d;p;t] ` sv($[type key h:` sv d,`par.txt;`$":",h mod[p;count h:read0 h];d];`$string p;t)}
+myPar:{[d;p;t] ` sv($[type key h:` sv d,`par.txt;`$":",h mod[p;count h:read0 h];d];`$string p;t)}
