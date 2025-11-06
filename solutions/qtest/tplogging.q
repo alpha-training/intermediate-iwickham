@@ -1,4 +1,4 @@
-\p 5051
+\p 5011
 \e 1
 
 \d .u
@@ -15,15 +15,16 @@ initLog:{
     if[not type key L;L set()];
     if[h:hopen L;@[hclose;h;{x}]];
     l::hopen L;
-    i::-1+count read0 L;
+    i::count get L;
  }
 
 / fill in your code from previous exercises
 upd:{[t;x]
     if[type x;'"this must be a list of lists"];
     i+:1;
-    {[t;data] neg[w[t]]@\:(`upd;t;data)}[t;flip C[t]!x];
-    l enlist (`upd;t;x);
+    a:flip C[t]!x;
+    {[t;data] neg[w[t]]@\:(`upd;t;data)}[t;a];
+    l enlist (`upd;t;a);
   }
 
 / fill in your code from previous exercises
