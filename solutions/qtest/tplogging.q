@@ -1,4 +1,4 @@
-\p 5081
+\p 5071
 \e 1
 
 \d .u
@@ -33,8 +33,6 @@ upd:{[t;x]
 sub:{[t] 
     $[11=type t;.z.s each t;w[t]:distinct w[t],.z.w];
     ("snapshot";(i,L))
-
-
     }
 
 / take from elsewhere

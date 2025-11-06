@@ -1,5 +1,8 @@
 upd:upsert
 \e 1
-h:hopen 5081
+h:hopen 5071
 
-sub:{[t] h(`.u.sub;t)}
+sub:{[t] 
+    a:h(`.u.sub;`);
+    -11!a[1;1];
+    }
