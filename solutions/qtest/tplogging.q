@@ -1,4 +1,4 @@
-\p 5071
+\p 5051
 \e 1
 
 \d .u
@@ -19,11 +19,10 @@ initLog:{
  }
 
 / fill in your code from previous exercises
-upd:{[t;x] 
+upd:{[t;x]
     if[type x;'"this must be a list of lists"];
     i+:1;
-    a:flip C[t]!x;
-    {[t;data] neg[w[t]]@\:(`upd;t;data)}[t;a];
+    {[t;data] neg[w[t]]@\:(`upd;t;data)}[t;flip C[t]!x];
     l enlist (`upd;t;x);
   }
 
