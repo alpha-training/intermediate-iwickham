@@ -15,7 +15,7 @@ initLog:{
     if[not type key L;L set()];
     if[h:hopen L;@[hclose;h;{x}]];
     l::hopen L;
-    i::-1+count read0 L;
+    i::count get L;
  }
 
 / fill in your code from previous exercises
@@ -48,5 +48,4 @@ sub:{[t]
 
 initLog[];
 \t 1000
-
 
