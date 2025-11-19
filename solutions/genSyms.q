@@ -1,4 +1,3 @@
 genSyms:{
-    l::`$/:.Q.A;
-    x {x;raze {[x;y] y,'x}[x] each l}/(l)
+    `$/:((x-1) {x;raze {[x;y] y,'x}[x] each .Q.A}/(.Q.A))
     }
