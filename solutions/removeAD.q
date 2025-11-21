@@ -1,0 +1,1 @@
+removeAD:{x where not x=prev x}
