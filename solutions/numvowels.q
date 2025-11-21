@@ -1,0 +1,1 @@
+numVowels:{[n] 7h$sum raze {x=y}[;n] each "aeiouyAEIOUY"}
