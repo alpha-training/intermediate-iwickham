@@ -1,1 +1,1 @@
-diskAmend:{@[x;(),y;:;z]}
+diskAmend:@[x;(),y;:;z]
