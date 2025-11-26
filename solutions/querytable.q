@@ -1,11 +1,9 @@
 queryTable:{[t;c]   
-    if[(`date in cols t) and not `date in c 0;
+    if[s:(`date in cols t) and not k:(`date in c 0);
         : "A date constraint must be present"
         ];
-    if[(not `date in cols t) and `date in c 0;
+    if[k and not s;
         : ?[t;1_c;0b;()]
         ];
     ?[t;c;0b;()]
     }
-
-
