@@ -7,3 +7,5 @@ longestRun:{[x]
     if[(count start)<>count end;start:0,start]; / deals with run  starting index 0
     x (first first qq) + til(1+first last qq:deltas (start;end)[;where p=max p:end-start]) / finds max run and indexs in
     }
+
+
