@@ -8,10 +8,8 @@ longestRun:{[x]
 longestRun3:{
     a1:([]v:x;1=0N-':x);
     a2:update idx:til count a1,(tt:1_deltas x,0b) from a1;
-    a3:select from a2 where tt in 1 -1;
-    a4::update dts:deltas idx from a3;
-    a5:select from a4 where tt=-1;
-    t:value flip select dts,v from a5 where dts=max dts;
+    a4::update dts:deltas idx from select from a2 where tt in 1 -1;
+    t:value flip select dts,v from (select from a4 where tt=-1) where dts=max dts;
     (t[1;0]-t[0;0])+til(1+t[0;0])
     }
 
