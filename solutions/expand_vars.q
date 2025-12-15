@@ -2,7 +2,7 @@ expand:{[x]
     if[not "$"in x;: x]
     alph:.Q.A,.Q.a;
     u:where not x in alph;
-    a1:u cut x;
+    a1:u _ x;
     a2:a1 where"$"=first each a1;
     a3:_[1;]each a2;
     a4:`$a3;
