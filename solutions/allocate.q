@@ -1,5 +1,7 @@
 allocate:{  
     p:floor x1:x*y%sum y;
-    p[max iasc x1-p]+:x-sum p;
+    t:x1-p;
+    p[max t?t]+:x-sum p;
     p
     }
+
